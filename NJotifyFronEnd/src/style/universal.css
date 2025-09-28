@@ -1,0 +1,256 @@
+* {
+    padding : 0;
+    margin : 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+p {
+    color: white;
+}
+.underlined {
+    text-decoration: underline;
+}
+
+
+::-webkit-scrollbar {
+    display: none; 
+  }
+  
+
+
+a:hover {
+    color: rgba(29, 185, 84);
+}
+
+
+textarea:focus, input:focus {
+  border-color: rgba(29, 185, 84);
+  outline: none;
+  box-shadow: 0 0 5px rgba(29, 185, 84, 0.5);
+}
+
+.main-content {
+    position: relative;
+    min-height: 100vh;
+    top: 0;
+    left:18vw;
+    transition: all 0.5s ease;
+    width: calc(100% - 18vw);
+    padding: 10px;
+
+}
+
+
+.loader {
+  transition:opacity 0.75s, visibility 0,75s;
+}
+
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+.loader::after{
+  content:"";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color : rgba(29, 185, 84);
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+@keyframes loading {
+    from {
+        transform: rotate(0 turn);
+    } to {
+        transform: rotate(1 turn);
+    }
+}
+
+
+
+
+.formInput {
+    background-color: black;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+    width: 100%;
+
+
+}
+
+.formInput:hover{
+
+    border-color: rgba(29, 185, 84);
+ 
+}
+
+
+.checkbox{
+    appearance: none;
+    width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+}
+
+
+.checkbox:checked {
+    background-color: #4caf50; /* Change the background color when checked */
+    border-color: #4caf50;
+  }
+  
+  .checkbox:checked::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+  }
+
+
+
+
+  .user-menu-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .user-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    z-index: 1000;
+  }
+  
+  .user-menu button {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .user-menu button:hover {
+    background: #f0f0f0;
+  }
+
+
+  .progress-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .progress-bar {
+    height: 4px;
+    border-radius: 10px;
+    width: 80%;
+    background-color: #ccc4;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .progress {
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #4caf50;
+  }
+  
+  .progress-bar:hover .progress {
+    background-color: #1b6e1e;
+  }
+  
+  .progress-bar:hover .progress-bar::after {
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    right: 0;
+    border-radius: 50%;
+    background-color: #ccc4;
+    transform: translate(50%, calc(2px - 50%));
+  }
+
+
+
+  @keyframes shimmer {
+    0% {
+      background-position: -100% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
+  .gray-transparent {
+    background: linear-gradient(
+      to right,
+      #2a2a2a 0%,
+      #3a3a3a 20%,
+      #2a2a2a 40%,
+      #2a2a2a 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+  }
+  
+
+
+  .track-container {
+    position: relative;
+  }
+  
+  .track-button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: none;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: #1db954; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .track-button:hover {
+    background-color: #0e923c;
+  }
+  
+  .track-container:hover .track-button {
+    display: block;
+    opacity: 1;
+  }
+  

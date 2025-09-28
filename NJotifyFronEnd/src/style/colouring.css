@@ -1,0 +1,54 @@
+/* Background */
+.bg-white{
+    background-color: white;
+}
+.bg-black{
+    background-color: black;
+}
+
+.bg-gradient-black{
+    background: linear-gradient(to bottom, black, #111, #222, #333);
+}
+
+.bg-dark-gray{
+    background-color: #222;
+}
+.bg-gray{
+    background-color: #444;
+}
+
+
+.bg-green{
+    background-color: rgba(29, 185, 84);
+}
+
+/* Font */
+
+.white {
+    color : rgb(255, 255, 255);
+}
+
+.black {
+    color : black;
+}
+.dark-gray {
+    color : darkgrey;
+}
+
+.green {
+    color: rgba(29, 185, 84)
+}
+
+
+.hover:hover {
+    cursor: pointer;
+    background-color:  rgba(128, 128, 128 , 0.5);
+    border-radius: 50px;
+}
+
+
+
+.gray-transparent {
+    background-color:  rgba(128, 128, 128 , 0.5);
+    border-radius: 5px;
+}

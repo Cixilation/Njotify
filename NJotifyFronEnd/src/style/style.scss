@@ -1,0 +1,164 @@
+@for $i from 0 through 100 {
+  .w-#{$i} {
+    width: #{$i}px;
+  }
+}
+
+@for $i from 0 through 100 {
+  .h-#{$i} {
+    height: #{$i}px;
+  }
+}
+
+@for $i from 0 through 100 {
+  .sw-#{$i} {
+    width: #{$i}vh;
+  }
+}
+
+@for $i from 0 through 100 {
+  .vw-#{$i} {
+    width: #{$i}vw;
+  }
+}
+
+@for $i from 0 through 100 {
+  .sh-#{$i} {
+    height: #{$i}vw;
+  }
+}
+
+@for $i from 0 through 100 {
+  .vh-#{$i} {
+    height: #{$i}vh;
+  }
+}
+
+
+@for $i from 0 through 100 {
+  .p-#{$i} {
+    padding: #{$i}px;
+  }
+}
+
+@for $i from 0 through 100 {
+  .px-#{$i} {
+    padding-left: #{$i}px;
+    padding-right: #{$i}px;
+  }
+}
+
+@for $i from 0 through 100 {
+  .py-#{$i} {
+    padding-top: #{$i}px;
+    padding-bottom: #{$i}px;
+  }
+}
+
+@for $i from 0 through 100 {
+  .pt-#{$i} {
+    padding-top: #{$i}px;
+  }
+}
+
+@for $i from 0 through 100 {
+  .pb-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+}
+
+@for $i from 0 through 100 {
+  .pl-#{$i} {
+    padding-left: #{$i}px;
+  }
+}
+
+@for $i from 0 through 100 {
+  .pr-#{$i} {
+    padding-right: #{$i}px;
+  }
+}
+
+
+@for $i from 0 through 100 {
+    .fs-#{$i} {
+      font-size: #{$i}px;
+    }
+}
+
+@for $i from 0 through 1000 {
+  .b-#{$i} {
+    font-weight: #{$i};
+  }
+}
+
+@for $i from 0 through 100 {
+  .m-#{$i} {
+    margin: #{$i}px;
+  }
+}
+
+@for $i from 0 through 100 {
+  .ml-#{$i} {
+    margin-left: #{$i}px;
+  }
+}
+@for $i from 0 through 100 {
+  .mr-#{$i} {
+    margin-right: #{$i}px;
+  }
+}
+@for $i from 0 through 100 {
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+}
+@for $i from 0 through 100 {
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+}
+@for $i from 0 through 100 {
+  .my-#{$i} {
+    margin-top: #{$i}px;
+    margin-bottom: #{$i}px;
+  }
+}
+@for $i from 0 through 100 {
+  .mx-#{$i} {
+    margin-left: #{$i}px;
+    margin-right: #{$i}px;
+  }
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.toast {
+  animation: fadeIn 0.6s forwards;
+}
+
+.toast-exit {
+  animation: fadeOut 0.6s forwards;
+}
